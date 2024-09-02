@@ -39,3 +39,9 @@ for(let pageButton of switcher.children) {
         e.preventDefault();
     }
 });
+
+var loader = document.getElementById("loader");
+
+window.addEventListener("load", function(){
+  loader.style.display = "none";
+})
