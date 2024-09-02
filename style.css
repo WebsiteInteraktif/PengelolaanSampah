@@ -71,6 +71,27 @@ body {
     width: 20%;
   }
 
+  .loader {
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    z-index: 99;
+  }
+
+  .loader.hidden{
+    animation: fadeOut 1s;
+    animation-fill-mode: forwards;
+  }
+  
+  @keyframes fadeOut {
+    100% {
+      opacity: 0;
+      visibility: hidden;
+    }
+  }
+
+
   #container[data-scene="1"] #Amelia {
     left: 0%;
     top: 25%;
